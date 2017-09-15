@@ -1,0 +1,64 @@
+# load low-level drivers
+loadusr -w ./setup.sh
+loadrt hal_bb_gpio output_pins=216,242,241,231,229,230,227,228,225,222,218,215,826,808,819,913,914 input_pins=226,223,224,221,217,807,809,810,811,812,813,814,815,816,817,818,911,912
+loadusr -Wn PortTest pyvcp -c PortTest 2-Port-Test.xml
+loadrt threads name1=porttest period1=1000000
+addf bb_gpio.read                         porttest
+addf bb_gpio.write                         porttest
+
+# BBB Enable start
+# common to output & input boards
+setp bb_gpio.p8.out-26.invert TRUE
+net En0001 PortTest.chip-en bb_gpio.p8.out-26
+# BBB Enable end
+
+# BBB Output cape start
+
+net db102 PortTest.btn-102 bb_gpio.p9.out-42 PortTest.led-102
+net db103 PortTest.btn-103 bb_gpio.p9.out-41 PortTest.led-103
+net db104 PortTest.btn-104 bb_gpio.p9.out-31 PortTest.led-104
+net db105 PortTest.btn-105 bb_gpio.p9.out-29 PortTest.led-105
+net db106 PortTest.btn-106 bb_gpio.p9.out-30 PortTest.led-106
+net db107 PortTest.btn-107 bb_gpio.p9.out-27 PortTest.led-107
+net db108 PortTest.btn-108 bb_gpio.p9.out-28 PortTest.led-108
+net db109 PortTest.btn-109 bb_gpio.p9.out-25 PortTest.led-109
+
+net db202 bb_gpio.p8.in-07 PortTest.led-202
+net db203 bb_gpio.p8.in-10 PortTest.led-203
+net db204 bb_gpio.p8.in-09 PortTest.led-204
+net db205 bb_gpio.p8.in-12 PortTest.led-205
+net db206 bb_gpio.p8.in-11 PortTest.led-206
+net db207 bb_gpio.p8.in-14 PortTest.led-207
+net db208 bb_gpio.p8.in-13 PortTest.led-208
+net db209 bb_gpio.p9.in-12 PortTest.led-209
+
+
+net db110 bb_gpio.p9.in-26 PortTest.led-110
+net db111 bb_gpio.p9.in-23 PortTest.led-111
+net db112 bb_gpio.p9.in-24 PortTest.led-112
+net db113 bb_gpio.p9.in-21 PortTest.led-113
+net db115 bb_gpio.p9.in-17 PortTest.led-115
+
+net db210 bb_gpio.p8.in-15 PortTest.led-210
+net db211 bb_gpio.p8.in-16 PortTest.led-211
+net db212 bb_gpio.p8.in-17 PortTest.led-212
+net db213 bb_gpio.p8.in-18 PortTest.led-213
+net db215 bb_gpio.p9.in-11 PortTest.led-215
+
+net db101 PortTest.btn-101 bb_gpio.p9.out-16 PortTest.led-101
+net db114 PortTest.btn-114 bb_gpio.p9.out-22 PortTest.led-114
+net db116 PortTest.btn-116 bb_gpio.p9.out-18 PortTest.led-116
+net db117 PortTest.btn-117 bb_gpio.p9.out-15 PortTest.led-117
+
+net db201 PortTest.btn-201 bb_gpio.p8.out-08 PortTest.led-201
+net db214 PortTest.btn-214 bb_gpio.p8.out-19 PortTest.led-214
+net db216 PortTest.btn-216 bb_gpio.p9.out-13 PortTest.led-216
+net db217 PortTest.btn-217 bb_gpio.p9.out-14 PortTest.led-217
+
+# BBB Ouput Cape end
+
+
+
+start
+
+# loadusr halmeter
