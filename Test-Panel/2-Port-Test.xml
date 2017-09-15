@@ -1,0 +1,690 @@
+<!-- Test panel for the parallel port cfg for out -->
+<pyvcp>
+<labelframe text="Port Tester">
+<!-- <table flexible_rows="[2]" flexible_columns="[1,4]"> -->
+<table>
+<tablesticky sticky="new"/>
+<tablerow/>
+			<tablespan columns="6"/>
+			<hbox>
+				<relief>RIDGE</relief>
+				<bd>2</bd>
+				<checkbutton>
+					<halpin>"chip-en"</halpin>
+					<text>"Output Enable"</text>
+					<initval>0</initval>
+				</checkbutton>
+			</hbox>	
+<tablerow/>
+
+		<label>
+            <text>" Data Port-01 "</text>
+            <relief>RIDGE</relief>
+            <bd>2</bd>
+        </label>
+
+        <label>
+			<text>" Status Port-01 "</text>
+			<relief>RIDGE</relief>
+			<bd>2</bd>
+		</label>
+
+		<label>
+			<text>" Control Port-01 "</text>
+			<relief>RIDGE</relief>
+			<bd>2</bd>
+		</label>
+		
+
+		<label>
+            <text>" Control Port-02 "</text>
+            <relief>RIDGE</relief>
+            <bd>2</bd>
+        </label>
+
+        <label>
+			<text>" Status Port-02 "</text>
+			<relief>RIDGE</relief>
+			<bd>2</bd>
+		</label>
+
+		<label>
+			<text>" Data Port-02 "</text>
+			<relief>RIDGE</relief>
+			<bd>2</bd>
+		</label>
+		
+<tablerow/>
+<!-- Row 1 Begin -->
+<!-- Pin -102 Begin -->
+			<hbox>
+				<relief>RIDGE</relief>
+				<bd>2</bd>
+				<button>
+					<halpin>"btn-102"</halpin>
+					<text>"Pin 02"</text>
+			</button>
+				<led>
+					<halpin>"led-102"</halpin>
+					<size>25</size>
+					<on_color>"green"</on_color>
+					<off_color>"red"</off_color>
+				</led>
+			</hbox>
+<!-- Pin-102 End -->
+
+<!-- Pin-110 Begin -->
+			
+			<hbox>
+				<relief>RIDGE</relief>
+				<bd>2</bd>
+				<label>
+					<text>"   Pin 10   "</text>
+					<relief>RIDGE</relief>
+					<bd>2</bd>
+				</label>
+				<led>
+					<halpin>"led-110"</halpin>
+					<size>25</size>
+					<on_color>"green"</on_color>
+					<off_color>"red"</off_color>
+				</led>       
+			</hbox>			
+<!-- Pin-110 End -->
+
+<!-- Pin-101 Begin -->
+
+			<hbox>
+				<relief>RIDGE</relief>
+				<bd>2</bd>
+				<button>
+					<halpin>"btn-101"</halpin>
+					<text>" Pin 01 "</text>
+				</button>
+				<led>
+					<halpin>"led-101"</halpin>
+					<size>25</size>
+					<on_color>"green"</on_color>
+					<off_color>"red"</off_color>
+				</led>
+			</hbox>
+<!-- Pin-101 End -->
+
+<!-- Pin -201 Begin -->
+			<hbox>
+				<relief>RIDGE</relief>
+				<bd>2</bd>
+				<button>
+					<halpin>"btn-201"</halpin>
+					<text>" Pin 01 "</text>
+			</button>
+				<led>
+					<halpin>"led-201"</halpin>
+					<size>25</size>
+					<on_color>"green"</on_color>
+					<off_color>"red"</off_color>
+				</led>
+			</hbox>
+<!-- Pin-201 End -->
+
+<!-- Pin-210 Begin -->
+			
+			<hbox>
+				<relief>RIDGE</relief>
+				<bd>2</bd>
+				<label>
+					<text>"   Pin 10   "</text>
+					<relief>RIDGE</relief>
+					<bd>2</bd>
+				</label>
+				<led>
+					<halpin>"led-210"</halpin>
+					<size>25</size>
+					<on_color>"green"</on_color>
+					<off_color>"red"</off_color>
+				</led>       
+			</hbox>			
+<!-- Pin-210 End -->
+
+<!-- Pin-202 Begin -->
+
+			<hbox>
+				<relief>RIDGE</relief>
+				<bd>2</bd>
+				<label>
+					<text>"   Pin 02   "</text>
+					<relief>RIDGE</relief>
+					<bd>2</bd>
+				</label>
+				<led>
+					<halpin>"led-202"</halpin>
+					<size>25</size>
+					<on_color>"green"</on_color>
+					<off_color>"red"</off_color>
+				</led>
+			</hbox>
+<!-- Pin-202 End -->
+<!-- Row 1 End -->
+<tablerow/>
+<!-- Row 2 Begin -->
+<!-- Pin -103 Begin -->
+			<hbox>
+				<relief>RIDGE</relief>
+				<bd>2</bd>
+				<button>
+					<halpin>"btn-103"</halpin>
+					<text>"Pin 03"</text>
+			</button>
+				<led>
+					<halpin>"led-103"</halpin>
+					<size>25</size>
+					<on_color>"green"</on_color>
+					<off_color>"red"</off_color>
+				</led>
+			</hbox>
+<!-- Pin-103 End -->
+
+<!-- Pin-111 Begin -->
+			
+			<hbox>
+				<relief>RIDGE</relief>
+				<bd>2</bd>
+				<label>
+					<text>"   Pin 11   "</text>
+					<relief>RIDGE</relief>
+					<bd>2</bd>
+				</label>
+				<led>
+					<halpin>"led-111"</halpin>
+					<size>25</size>
+					<on_color>"green"</on_color>
+					<off_color>"red"</off_color>
+				</led>       
+			</hbox>			
+<!-- Pin-111 End -->
+
+<!-- Pin-114 Begin -->
+
+			<hbox>
+				<relief>RIDGE</relief>
+				<bd>2</bd>
+				<button>
+					<halpin>"btn-114"</halpin>
+					<text>" Pin 14 "</text>
+				</button>
+				<led>
+					<halpin>"led-114"</halpin>
+					<size>25</size>
+					<on_color>"green"</on_color>
+					<off_color>"red"</off_color>
+				</led>
+			</hbox>
+<!-- Pin-114 End -->
+
+<!-- Pin -214 Begin -->
+			<hbox>
+				<relief>RIDGE</relief>
+				<bd>2</bd>
+				<button>
+					<halpin>"btn-214"</halpin>
+					<text>" Pin 14 "</text>
+			</button>
+				<led>
+					<halpin>"led-214"</halpin>
+					<size>25</size>
+					<on_color>"green"</on_color>
+					<off_color>"red"</off_color>
+				</led>
+			</hbox>
+<!-- Pin-203 End -->
+
+<!-- Pin-211 Begin -->
+			
+			<hbox>
+				<relief>RIDGE</relief>
+				<bd>2</bd>
+				<label>
+					<text>"   Pin 11   "</text>
+					<relief>RIDGE</relief>
+					<bd>2</bd>
+				</label>
+				<led>
+					<halpin>"led-211"</halpin>
+					<size>25</size>
+					<on_color>"green"</on_color>
+					<off_color>"red"</off_color>
+				</led>       
+			</hbox>			
+<!-- Pin-211 End -->
+
+<!-- Pin-203 Begin -->
+
+			<hbox>
+				<relief>RIDGE</relief>
+				<bd>2</bd>
+				<label>
+					<text>"   Pin 03   "</text>
+					<relief>RIDGE</relief>
+					<bd>2</bd>
+				</label>
+				<led>
+					<halpin>"led-203"</halpin>
+					<size>25</size>
+					<on_color>"green"</on_color>
+					<off_color>"red"</off_color>
+				</led>
+			</hbox>
+<!-- Pin-201 End -->
+<!-- Row 2 End -->
+<tablerow/>
+<!-- Row 3 Begin -->
+<!-- Pin -104 Begin -->
+			<hbox>
+				<relief>RIDGE</relief>
+				<bd>2</bd>
+				<button>
+					<halpin>"btn-104"</halpin>
+					<text>"Pin 04"</text>
+			</button>
+				<led>
+					<halpin>"led-104"</halpin>
+					<size>25</size>
+					<on_color>"green"</on_color>
+					<off_color>"red"</off_color>
+				</led>
+			</hbox>
+<!-- Pin-104 End -->
+
+<!-- Pin-112 Begin -->
+			
+			<hbox>
+				<relief>RIDGE</relief>
+				<bd>2</bd>
+				<label>
+					<text>"   Pin 12   "</text>
+					<relief>RIDGE</relief>
+					<bd>2</bd>
+				</label>
+				<led>
+					<halpin>"led-112"</halpin>
+					<size>25</size>
+					<on_color>"green"</on_color>
+					<off_color>"red"</off_color>
+				</led>       
+			</hbox>			
+<!-- Pin-112 End -->
+
+<!-- Pin-116 Begin -->
+
+			<hbox>
+				<relief>RIDGE</relief>
+				<bd>2</bd>
+				<button>
+					<halpin>"btn-116"</halpin>
+					<text>" Pin 16 "</text>
+				</button>
+				<led>
+					<halpin>"led-116"</halpin>
+					<size>25</size>
+					<on_color>"green"</on_color>
+					<off_color>"red"</off_color>
+				</led>
+			</hbox>
+<!-- Pin-116 End -->
+
+<!-- Pin -216 Begin -->
+			<hbox>
+				<relief>RIDGE</relief>
+				<bd>2</bd>
+				<button>
+					<halpin>"btn-216"</halpin>
+					<text>" Pin 16 "</text>
+			</button>
+				<led>
+					<halpin>"led-216"</halpin>
+					<size>25</size>
+					<on_color>"green"</on_color>
+					<off_color>"red"</off_color>
+				</led>
+			</hbox>
+<!-- Pin-216 End -->
+
+<!-- Pin-212 Begin -->
+			
+			<hbox>
+				<relief>RIDGE</relief>
+				<bd>2</bd>
+				<label>
+					<text>"   Pin 12   "</text>
+					<relief>RIDGE</relief>
+					<bd>2</bd>
+				</label>
+				<led>
+					<halpin>"led-212"</halpin>
+					<size>25</size>
+					<on_color>"green"</on_color>
+					<off_color>"red"</off_color>
+				</led>       
+			</hbox>			
+<!-- Pin-212 End -->
+
+<!-- Pin-204 Begin -->
+
+			<hbox>
+				<relief>RIDGE</relief>
+				<bd>2</bd>
+				<label>
+					<text>"   Pin 04   "</text>
+					<relief>RIDGE</relief>
+					<bd>2</bd>
+				</label>
+				<led>
+					<halpin>"led-204"</halpin>
+					<size>25</size>
+					<on_color>"green"</on_color>
+					<off_color>"red"</off_color>
+				</led>
+			</hbox>
+<!-- Pin-201 End -->
+
+<!-- Row 4 End -->
+<tablerow/>
+<!-- Row 5 Begin -->
+<!-- Pin -105 Begin -->
+			<hbox>
+				<relief>RIDGE</relief>
+				<bd>2</bd>
+				<button>
+					<halpin>"btn-105"</halpin>
+					<text>"Pin 05"</text>
+			</button>
+				<led>
+					<halpin>"led-105"</halpin>
+					<size>25</size>
+					<on_color>"green"</on_color>
+					<off_color>"red"</off_color>
+				</led>
+			</hbox>
+<!-- Pin-105 End -->
+
+<!-- Pin-113 Begin -->
+			
+			<hbox>
+				<relief>RIDGE</relief>
+				<bd>2</bd>
+				<label>
+					<text>"   Pin 13   "</text>
+					<relief>RIDGE</relief>
+					<bd>2</bd>
+				</label>
+				<led>
+					<halpin>"led-113"</halpin>
+					<size>25</size>
+					<on_color>"green"</on_color>
+					<off_color>"red"</off_color>
+				</led>       
+			</hbox>			
+<!-- Pin-113 End -->
+
+<!-- Pin-117 Begin -->
+
+			<hbox>
+				<relief>RIDGE</relief>
+				<bd>2</bd>
+				<button>
+					<halpin>"btn-117"</halpin>
+					<text>" Pin 17 "</text>
+				</button>
+				<led>
+					<halpin>"led-117"</halpin>
+					<size>25</size>
+					<on_color>"green"</on_color>
+					<off_color>"red"</off_color>
+				</led>
+			</hbox>
+<!-- Pin-117 End -->
+
+<!-- Pin -217 Begin -->
+			<hbox>
+				<relief>RIDGE</relief>
+				<bd>2</bd>
+				<button>
+					<halpin>"btn-217"</halpin>
+					<text>" Pin 17 "</text>
+			</button>
+				<led>
+					<halpin>"led-217"</halpin>
+					<size>25</size>
+					<on_color>"green"</on_color>
+					<off_color>"red"</off_color>
+				</led>
+			</hbox>
+<!-- Pin-217 End -->
+
+<!-- Pin-213 Begin -->
+			
+			<hbox>
+				<relief>RIDGE</relief>
+				<bd>2</bd>
+				<label>
+					<text>"   Pin 13   "</text>
+					<relief>RIDGE</relief>
+					<bd>2</bd>
+				</label>
+				<led>
+					<halpin>"led-213"</halpin>
+					<size>25</size>
+					<on_color>"green"</on_color>
+					<off_color>"red"</off_color>
+				</led>       
+			</hbox>			
+<!-- Pin-213 End -->
+
+<!-- Pin-205 Begin -->
+
+			<hbox>
+				<relief>RIDGE</relief>
+				<bd>2</bd>
+				<label>
+					<text>"   Pin 05   "</text>
+					<relief>RIDGE</relief>
+					<bd>2</bd>
+				</label>
+				<led>
+					<halpin>"led-205"</halpin>
+					<size>25</size>
+					<on_color>"green"</on_color>
+					<off_color>"red"</off_color>
+				</led>
+			</hbox>
+<!-- Pin-205 End -->
+<!-- Row 5 End -->
+<tablerow/>
+<!-- pin 6 & 15 Begin -->
+			<hbox>
+				<relief>RIDGE</relief>
+				<bd>2</bd>
+				<button>
+					<halpin>"btn-106"</halpin>
+					<text>"Pin 06"</text>
+				</button>
+				<led>
+					<halpin>"led-106"</halpin>
+					<size>25</size>
+					<on_color>"green"</on_color>
+					<off_color>"red"</off_color>
+				</led>
+			</hbox>
+			<hbox>
+				<relief>RIDGE</relief>
+				<bd>2</bd>
+				<label>
+					<text>"   Pin 15   "</text>
+					<relief>RIDGE</relief>
+					<bd>2</bd>
+				</label>
+				<led>
+					<halpin>"led-115"</halpin>
+					<size>25</size>
+					<on_color>"green"</on_color>
+					<off_color>"red"</off_color>
+				</led>       
+			</hbox>	
+			<tablespan columns="2"/>
+			<hbox>
+				<relief>RIDGE</relief>
+				<bd>2</bd>
+			</hbox>				
+						
+			<hbox>
+				<relief>RIDGE</relief>
+				<bd>2</bd>
+				<label>
+					<text>"   Pin 15   "</text>
+					<relief>RIDGE</relief>					
+					<bd>2</bd>
+				</label>
+				<led>
+					<halpin>"led-215"</halpin>
+					<size>25</size>
+					<on_color>"green"</on_color>
+					<off_color>"red"</off_color>
+				</led>
+			</hbox>
+			<hbox>
+				<relief>RIDGE</relief>
+				<bd>2</bd>
+				<label>
+					<text>"   Pin 06   "</text>
+					<relief>RIDGE</relief>
+					<bd>2</bd>
+				</label>
+				<led>
+					<halpin>"led-206"</halpin>
+					<size>25</size>
+					<on_color>"green"</on_color>
+					<off_color>"red"</off_color>
+				</led>       
+			</hbox>				
+<!-- pin 6 & 15 End -->
+<tablerow/>
+<!-- Pin 7 Begins -->
+			<hbox>
+				<relief>RIDGE</relief>
+				<bd>2</bd>
+				<button>
+					<halpin>"btn-107"</halpin>
+					<text>"Pin 07"</text>
+				</button>
+				<led>
+					<halpin>"led-107"</halpin>
+					<size>25</size>
+					<on_color>"green"</on_color>
+					<off_color>"red"</off_color>
+				</led>
+			</hbox>
+			
+			<tablespan columns="4"/>
+			<hbox>
+				<relief>RIDGE</relief>
+				<bd>2</bd>
+			</hbox>				
+
+			<hbox>
+				<relief>RIDGE</relief>
+				<bd>2</bd>
+				<label>
+					<text>"   Pin 07   "</text>
+					<relief>RIDGE</relief>
+					<bd>2</bd>
+				</label>
+				<led>
+					<halpin>"led-207"</halpin>
+					<size>25</size>
+					<on_color>"green"</on_color>
+					<off_color>"red"</off_color>
+				</led>
+			</hbox>
+<!-- Pin 7 Begins -->
+<tablerow/>
+<!-- Pin 8 Begins -->
+			<hbox>
+				<relief>RIDGE</relief>
+				<bd>2</bd>
+				<button>
+					<halpin>"btn-108"</halpin>
+					<text>"Pin 08"</text>
+				</button>
+				<led>
+					<halpin>"led-108"</halpin>
+					<size>25</size>
+					<on_color>"green"</on_color>
+					<off_color>"red"</off_color>
+				</led>
+			</hbox>
+			
+			<tablespan columns="4"/>
+			<hbox>
+				<relief>RIDGE</relief>
+				<bd>2</bd>
+			</hbox>				
+
+			<hbox>
+				<relief>RIDGE</relief>
+				<bd>2</bd>
+				<label>
+					<text>"   Pin 08   "</text>
+					<relief>RIDGE</relief>
+					<bd>2</bd>
+				</label>
+				<led>
+					<halpin>"led-208"</halpin>
+					<size>25</size>
+					<on_color>"green"</on_color>
+					<off_color>"red"</off_color>
+				</led>
+			</hbox>
+<!-- Pin 8 Begins -->
+<tablerow/>
+<!-- Pin 9 Begins -->
+			<hbox>
+				<relief>RIDGE</relief>
+				<bd>2</bd>
+				<button>
+					<halpin>"btn-109"</halpin>
+					<text>"Pin 09"</text>
+				</button>
+				<led>
+					<halpin>"led-109"</halpin>
+					<size>25</size>
+					<on_color>"green"</on_color>
+					<off_color>"red"</off_color>
+				</led>
+			</hbox>
+			
+			<tablespan columns="4"/>
+			<hbox>
+				<relief>RIDGE</relief>
+				<bd>2</bd>
+			</hbox>				
+
+			<hbox>
+				<relief>RIDGE</relief>
+				<bd>2</bd>
+				<label>
+					<text>"   Pin 09   "</text>
+					<relief>RIDGE</relief>
+					<bd>2</bd>
+				</label>
+				<led>
+					<halpin>"led-209"</halpin>
+					<size>25</size>
+					<on_color>"green"</on_color>
+					<off_color>"red"</off_color>
+				</led>
+			</hbox>
+<!-- Pin 9 Begins -->
+
+</table>
+</labelframe>
+</pyvcp>
