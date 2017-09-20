@@ -109,12 +109,12 @@ sudo $(which config-pin) -f - <<- EOF
     P8.8        low         # P2-DB-01
     P8.9        in          # P2-DB-04     
     P8.10       in          # P2-DB-03
-    P8.11       in          # P2-DB-06
-    P8.12       in          # P2-DB-05
+    P8.11       in          # P2-DB-06 (note)-change to eqep for hal_arm335xQEP Phase B encoder #2
+    P8.12       in          # P2-DB-05 (note)-change to eqep for hal_arm335xQEP Phase A encoder #2
     P8.13       in          # P2-DB-08
     P8.14       in          # P2-DB-07
-    P8.15       in          # P2-DB-10 (note)-change to pruin for Rotary Encoder Phase A 
-    P8.16       in          # P2-DB-11 (note)-change to pruin for Rotary Encoder Phase B
+    P8.15       in          # P2-DB-10 (note)-change to pruin for hal_pru_generic Phase A encoder  
+    P8.16       in          # P2-DB-11 (note)-change to pruin for hal_pru_generic Phase B encoder
     P8.17       in          # P2-DB-12
     P8.18       in          # P2-DB-13
     P8.19       low         # P2-DB-14
@@ -137,20 +137,20 @@ sudo $(which config-pin) -f - <<- EOF
     P9.22       low         # P1-DB-14
     P9.23       in          # P1-DB-11
     P9.24       in          # P1-DB-12
-    P9.25       low         # P1-DB-09 (note)-change to pruout for PRU step & direction 
+    P9.25       low         # P1-DB-09 (note)-change to pruout for direct PRU step & direction 
     P9.26       in          # P1-DB-10
-    P9.27       low         # P1-DB-07 (note)-change to pruout for PRU step & direction
-    P9.28       low         # P1-DB-08 (note)-change to pruout for PRU step & direction
-    P9.29       low         # P1-DB-05 (note)-change to pruout for PRU step & direction
-    P9.30       low         # P1-DB-06 (note)-change to pruout for PRU step & direction
-    P9.31       low         # P1-DB-04 (note)-change to pruout for PRU step & direction
+    P9.27       low         # P1-DB-07 (note)-change to pruout for direct PRU step & direction
+    P9.28       low         # P1-DB-08 (note)-change to pruout for direct PRU step & direction
+    P9.29       low         # P1-DB-05 (note)-change to pruout for direct PRU step & direction
+    P9.30       low         # P1-DB-06 (note)-change to pruout for direct PRU step & direction
+    P9.31       low         # P1-DB-04 (note)-change to pruout for direct PRU step & direction
 
 	#P9.41A & P9.42A are set as input as we want to use
 	#P9.41B & P9.42B as output 
 	P9.41		in			# DO NOT CHANGE 
 	P9.42		in			# DO NOT CHANGE
-	P9.91		low			# P1-DB-03 (note)-change to pruout for PRU step & direction 
-	P9.92		low			# P1-DB-02 (note)-change to pruout for PRU step & direction 
+	P9.91		low			# P1-DB-03 (note)-change to pruout for direct PRU step & direction 
+	P9.92		low			# P1-DB-02 (note)-change to pruout for direct PRU step & direction 
 #END PORT 1
 
 EOF
