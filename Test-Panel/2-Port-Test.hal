@@ -1,10 +1,10 @@
 # load low-level drivers
 loadusr -w ./setup.sh
-loadrt hal_bb_gpio output_pins=216,242,241,231,229,230,227,228,225,222,218,215,826,808,819,913,914 input_pins=226,223,224,221,217,807,809,810,811,812,813,814,815,816,817,818,911,912
+loadrt hal_bb_gpio output_pins=916,942,941,931,929,930,927,928,925,922,918,915,826,808,819,913,914 input_pins=926,923,924,921,917,807,809,810,811,812,813,814,815,816,817,818,911,912
 loadusr -Wn PortTest pyvcp -c PortTest 2-Port-Test.xml
 loadrt threads name1=porttest period1=1000000
 addf bb_gpio.read                         porttest
-addf bb_gpio.write                         porttest
+addf bb_gpio.write                        porttest
 
 # BBB Enable start
 # common to output & input boards
