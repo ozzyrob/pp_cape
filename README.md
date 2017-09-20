@@ -15,4 +15,4 @@ users
 
 To be used in conjunction with pp_bob_output & pp_bob_input boards
 
-[logo]:https://raw.githubusercontent.com/ozzyrob/pp_cape/master/pp_cape.jpg
+![cape](https://raw.githubusercontent.com/ozzyrob/pp_cape/master/pp_cape.jpg)
